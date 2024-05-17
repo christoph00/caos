@@ -25,6 +25,7 @@ install:
   - qemu-user-binfmt
   - qemu-user-static
   - qemu
+  - gns3-gui
   - python-devel
   - binutils
   - dmidecode
