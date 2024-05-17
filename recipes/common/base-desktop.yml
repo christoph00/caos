@@ -12,6 +12,7 @@ modules:
       - thorium.sh
       - theme.sh
       - distrobox.sh
+      - wezterm.sh
       #- nix.sh
 
   - type: default-flatpaks
