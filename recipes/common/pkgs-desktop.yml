@@ -50,7 +50,7 @@ install:
   - yt-dlp
 
 optfix:
-  - chromium.org/thorium
+  - chromium.org
 
 remove:
       - firefox
