@@ -1,0 +1,16 @@
+type: rpm-ostree
+install:
+  - edk2-ovmf
+  - genisoimage
+  - libvirt
+  - qemu
+  - qemu-char-spice
+  - qemu-device-display-virtio-gpu
+  - qemu-device-display-virtio-vga
+  - qemu-device-usb-redirect
+  - qemu-img
+  - qemu-system-x86-core
+  - qemu-user-binfmt
+  - qemu-user-static
+  - virt-manager
+  - virt-viewer
