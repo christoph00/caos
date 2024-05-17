@@ -33,6 +33,7 @@ modules:
   - type: script
     scripts:
       - thorium.sh
+      - theme.sh
       - distrobox.sh
       #- nix.sh
 
