@@ -1,7 +1,7 @@
 # image will be published to ghcr.io/<user>/<name>
-name: caos
+name: caos-desktop
 # description will be included in the image's metadata
-description: This is my personal OS image.
+description: personal desktop image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/aurora-dx
@@ -20,8 +20,8 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
-      - micro
       - starship
+      - https://github.com/Alex313031/thorium/releases/download/M124.0.6367.218/thorium-browser_124.0.6367.218_AVX2.rpm
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
