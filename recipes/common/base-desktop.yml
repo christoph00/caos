@@ -29,6 +29,6 @@ modules:
     scripts:
       - thorium.sh
       - distrobox.sh
-      - nix.sh
+      #- nix.sh
 
   - type: signing
