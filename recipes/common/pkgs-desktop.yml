@@ -1,0 +1,32 @@
+type: rpm-ostree
+repos:
+  - https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-%OS_VERSION%/ublue-os-staging-fedora-%OS_VERSION%.repo
+
+install:
+  # - auto-cpufreq
+  - android-tools
+  - zsh
+  - mosh
+  - neovim
+  - p7zip
+  - p7zip-plugins
+  - podman-compose
+  - podman-tui
+  - podmansh
+  - playerctl
+  - python3-pip
+  - libvirt
+  - qemu-char-spice
+  - qemu-device-display-virtio-gpu
+  - qemu-device-display-virtio-vga
+  - qemu-device-usb-redirect
+  - qemu-img
+  - qemu-system-x86-core
+  - qemu-user-binfmt
+  - qemu-user-static
+  - qemu
+  - python-devel
+  - binutils
+  - dmidecode
+  - tlp
+  - tlp-rdw

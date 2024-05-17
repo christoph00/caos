@@ -1,0 +1,40 @@
+modules:
+  - type: fonts
+    fonts:
+      google-fonts:
+        - Fira Code
+        - Open Sans
+        - JetBrains Mono
+        - Roboto
+
+  - type: default-flatpaks
+    notify: true
+    system:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub-system
+      repo-title: "Flathub (System)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+      install:
+        - com.mattjakeman.ExtensionManager
+        - io.github.flattool.Warehouse
+        - org.mozilla.firefox
+        - it.mijorus.gearlever
+        - org.kde.konsole
+        - com.github.d4nj1.tlpui
+    user:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub-user
+      repo-title: "Flathub"
+
+  - type: systemd
+    system:
+      enabled:
+        - user-groups.service
+        - plymouth-theme.service
+        - tlp.service
+      masked:
+        - power-profiles-daemon.service
+    user:
+      enabled:
+        - podman.socket
+
+  - type: signing
