@@ -1,0 +1,16 @@
+# image will be published to ghcr.io/<user>/<name>
+name: caos-laptop
+# description will be included in the image's metadata
+description: personal laptop image.
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/christoph00/kinoite-main
+image-version: 40 # latest is also supported if you want new updates ASAP
+
+modules:
+  - from-file: common/base-desktop.yml
+  - from-file: common/pkgs-desktop.yml
+  - type: bling
+    install:
+      - laptop
+      - ublue-update
