@@ -13,7 +13,7 @@ modules:
       - theme.sh
       - distrobox.sh
       - wezterm.sh
-      #- nix.sh
+      - nix.sh
 
   - type: default-flatpaks
     notify: true
@@ -38,7 +38,5 @@ modules:
     fonts:
       nerd-fonts:
         - JetBrainsMono
-
-  
 
   - type: signing

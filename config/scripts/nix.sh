@@ -5,4 +5,7 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --no-start-daemon --no-confirm linux 
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install linux \
+  --extra-conf "sandbox = false" \
+  --no-start-daemon \
+  --no-confirm
