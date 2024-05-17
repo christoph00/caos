@@ -8,14 +8,15 @@ set -oue pipefail
 THORIUM_VER=$(curl -sL https://api.github.com/repos/Alex313031/thorium/releases/latest | jq -r '.assets[] | select(.name? | match(".*_AVX2.rpm$")) | .browser_download_url')
 curl -sL -o /tmp/thorium.rpm ${THORIUM_VER}
 rpm-ostree install /tmp/thorium.rpm
-ln -sf /usr/lib/opt/chromium.org/thorium/thorium-browser /usr/bin/thorium-browser
 
-ls -lah /usr/lib/opt
+# And then we do the hacky dance!
+mv /var/opt/chromium.org /usr/lib/chromium.org # move this over here
 
-
-ls -lah /opt
-
-
-which thorium-browser
+#####
+# Register path symlink
+# We do this via tmpfiles.d so that it is created by the live system.
+cat >/usr/lib/tmpfiles.d/chromium.conf <<EOF
+L  /opt/chromium.org  -  -  -  -  /usr/lib/chromium.org
+EOF
 
 sed -i 's@/opt/chromium.org/thorium/thorium_shell@/usr/lib/opt/chromium.org/thorium/thorium_shell@g' /usr/bin/thorium-shell
