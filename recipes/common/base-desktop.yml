@@ -28,6 +28,7 @@ modules:
   - type: script
     scripts:
       - thorium.sh
+      - distrobox.sh
 
   - type: systemd
     system:
