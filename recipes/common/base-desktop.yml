@@ -33,7 +33,6 @@ modules:
   - type: systemd
     system:
       enabled:
-        - user-groups.service
         - plymouth-theme.service
         - tlp.service
       masked:
