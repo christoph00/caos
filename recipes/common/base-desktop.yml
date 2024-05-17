@@ -25,6 +25,10 @@ modules:
       repo-name: flathub-user
       repo-title: "Flathub"
 
+  - type: script
+    scripts:
+      - thorium.sh
+
   - type: systemd
     system:
       enabled:
