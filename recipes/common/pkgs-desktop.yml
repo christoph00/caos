@@ -29,8 +29,7 @@ install:
   - binutils
   - dmidecode
   - tlp
-  - tlp-rd
-  
+
 remove:
       - firefox
       - firefox-langpacks
