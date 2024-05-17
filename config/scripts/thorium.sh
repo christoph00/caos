@@ -5,6 +5,23 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 
+
+echo "Installing Throium Browser"
+
+# On libostree systems, /opt is a symlink to /var/opt,
+# which actually only exists on the live system. /var is
+# a separate mutable, stateful FS that's overlaid onto
+# the ostree rootfs. Therefore we need to install it into
+# /usr/lib/google instead, and dynamically create a
+# symbolic link /opt/google => /usr/lib/google upon
+# boot.
+
+# Prepare staging directory
+mkdir -p /var/opt # -p just in case it exists
+
+# Prepare alternatives directory
+mkdir -p /var/lib/alternatives
+
 THORIUM_VER=$(curl -sL https://api.github.com/repos/Alex313031/thorium/releases/latest | jq -r '.assets[] | select(.name? | match(".*_AVX2.rpm$")) | .browser_download_url')
 curl -sL -o /tmp/thorium.rpm ${THORIUM_VER}
 rpm-ostree install /tmp/thorium.rpm
