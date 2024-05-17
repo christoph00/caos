@@ -7,11 +7,3 @@ description: personal server image.
 base-image: ghcr.io/ublue-os/ucore-minimal
 image-version: stable # latest is also supported if you want new updates ASAP
 
-modules:
-  - type: rpm-ostree
-    install:
-      - wget
-      - curl
-  - type: bling
-    install:
-      - ublue-update
