@@ -10,10 +10,10 @@ curl -sL -o /tmp/thorium.rpm ${THORIUM_VER}
 rpm-ostree install /tmp/thorium.rpm
 ln -sf /usr/lib/opt/chromium.org/thorium/thorium-browser /usr/bin/thorium-browser
 
-ls -lah /usr/lib/opt/chromium.org/thorium
+ls -lah /usr/lib/opt
 
 
-ls -lah /opt/chromium.org/thorium
+ls -lah /opt
 
 
 which thorium-browser
