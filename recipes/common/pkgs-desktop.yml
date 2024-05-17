@@ -31,8 +31,26 @@ install:
   - dmidecode
   - tlp
 
+  - wezterm
+  - kitty
+  - bat
+  - duf
+  - fastfetch
+  - fd-find
+  - fzf
+  - git-delta
+  - eza
+  - neovim
+  - ripgrep
+  - sd
+  - zsh
+  - ImageMagick
+
+  - ffmpeg
+  - yt-dlp
+
 optfix:
-  - chromium.org
+  - chromium.org/thorium
 
 remove:
       - firefox
