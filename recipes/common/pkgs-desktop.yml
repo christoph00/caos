@@ -30,6 +30,9 @@ install:
   - dmidecode
   - tlp
 
+optfix:
+  - chromium.org
+
 remove:
       - firefox
       - firefox-langpacks
