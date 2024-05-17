@@ -29,16 +29,6 @@ modules:
     scripts:
       - thorium.sh
       - distrobox.sh
-
-  - type: systemd
-    system:
-      enabled:
-        - plymouth-theme.service
-        - tlp.service
-      masked:
-        - power-profiles-daemon.service
-    user:
-      enabled:
-        - podman.socket
+      - nix.sh
 
   - type: signing
