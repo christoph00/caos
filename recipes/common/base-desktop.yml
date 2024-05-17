@@ -7,6 +7,13 @@ modules:
         - JetBrains Mono
         - Roboto
 
+  - type: script
+    scripts:
+      - thorium.sh
+      - theme.sh
+      - distrobox.sh
+      #- nix.sh
+
   - type: default-flatpaks
     notify: true
     system:
@@ -31,11 +38,6 @@ modules:
       nerd-fonts:
         - JetBrainsMono
 
-  - type: script
-    scripts:
-      - thorium.sh
-      - theme.sh
-      - distrobox.sh
-      #- nix.sh
+  
 
   - type: signing
