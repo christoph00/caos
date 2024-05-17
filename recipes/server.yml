@@ -7,3 +7,7 @@ description: personal server image.
 base-image: ghcr.io/ublue-os/ucore-minimal
 image-version: stable # latest is also supported if you want new updates ASAP
 
+modules:
+  - type: script
+    scripts:
+      - base.sh
