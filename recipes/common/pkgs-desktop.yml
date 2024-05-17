@@ -31,7 +31,6 @@ install:
   - dmidecode
   - tlp
 
-  - wezterm
   - kitty
   - bat
   - duf
