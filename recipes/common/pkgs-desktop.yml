@@ -29,4 +29,11 @@ install:
   - binutils
   - dmidecode
   - tlp
-  - tlp-rdw
+  - tlp-rd
+  
+remove:
+      - firefox
+      - firefox-langpacks
+      - virtualbox-guest-additions
+      - toolbox
+      - nvtop

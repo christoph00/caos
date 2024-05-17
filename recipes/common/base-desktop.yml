@@ -25,6 +25,11 @@ modules:
       repo-name: flathub-user
       repo-title: "Flathub"
 
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - JetBrainsMono
+
   - type: script
     scripts:
       - thorium.sh
