@@ -30,7 +30,7 @@ install:
   - binutils
   - dmidecode
   - tlp
-
+  - bcachefs-tools
   - kitty
   - bat
   - duf
