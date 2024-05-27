@@ -15,6 +15,7 @@ modules:
       - wezterm.sh
       - nix.sh
       - brand.sh
+      - brew.sh
 
   - type: default-flatpaks
     notify: true
