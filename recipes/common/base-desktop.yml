@@ -4,8 +4,9 @@ modules:
       google-fonts:
         - Fira Code
         - Open Sans
-        - JetBrains Mono
         - Roboto
+      nerd-fonts:
+        - JetBrainsMono
 
   - type: script
     scripts:
@@ -13,10 +14,10 @@ modules:
       - theme.sh
       - distrobox.sh
       - wezterm.sh
-      - nix.sh
+      #- nix.sh
       - brand.sh
       - brew.sh
-      - cloud-hypervisor.sh
+      #- cloud-hypervisor.sh
 
   - type: default-flatpaks
     notify: true
@@ -27,20 +28,15 @@ modules:
       install:
         - com.mattjakeman.ExtensionManager
         - io.github.flattool.Warehouse
-        - org.mozilla.firefox
+        #- org.mozilla.firefox
         - it.mijorus.gearlever
-        - org.kde.konsole
+        #- org.kde.konsole
         - com.github.d4nj1.tlpui
-        - com.visualstudio.code
+       # - com.visualstudio.code
     user:
       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       repo-name: flathub-user
       repo-title: "Flathub"
-
-  - type: fonts
-    fonts:
-      nerd-fonts:
-        - JetBrainsMono
   - type: signing
   - type: files
     files:

@@ -4,49 +4,49 @@ repos:
 
 install:
   # - auto-cpufreq
-  - android-tools
-  - zsh
-  - mosh
-  - neovim
-  - p7zip
-  - p7zip-plugins
-  - podman-compose
-  - podman-tui
-  - podmansh
-  - playerctl
-  - python3-pip
-  - libvirt
-  - qemu-char-spice
-  - qemu-device-display-virtio-gpu
-  - qemu-device-display-virtio-vga
-  - qemu-device-usb-redirect
-  - qemu-img
-  - qemu-system-x86-core
-  - qemu-user-binfmt
-  - qemu-user-static
-  - qemu
-  - gns3-gui
-  - python-devel
+  #- android-tools
+  #- zsh
+  #- mosh
+  #- neovim
+  #- p7zip
+  #- p7zip-plugins
+ # - podman-compose
+ # - podman-tui
+ # - podmansh
+ # - playerctl
+  #- python3-pip
+  #- libvirt
+  #- qemu-char-spice
+  #- qemu-device-display-virtio-gpu
+  #- qemu-device-display-virtio-vga
+  #- qemu-device-usb-redirect
+  #- qemu-img
+  #- qemu-system-x86-core
+  #- qemu-user-binfmt
+  #- qemu-user-static
+  #- qemu
+  #- gns3-gui
+  #- python-devel
   - binutils
   - dmidecode
   - tlp
   - bcachefs-tools
-  - kitty
-  - bat
-  - duf
-  - fastfetch
-  - fd-find
-  - fzf
-  - git-delta
-  - eza
-  - neovim
+  #- kitty
+  #- bat
+  #- duf
+  #- fastfetch
+  #- fd-find
+  #- fzf
+  #- git-delta
+  #- eza
+  #- neovim
   - ripgrep
-  - sd
-  - zsh
-  - ImageMagick
+  #- sd
+  #- zsh
+  #- ImageMagick
 
-  - ffmpeg
-  - yt-dlp
+  #- ffmpeg
+  #- yt-dlp
 
 optfix:
   - chromium.org
