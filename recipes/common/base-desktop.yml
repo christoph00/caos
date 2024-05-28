@@ -16,6 +16,7 @@ modules:
       - nix.sh
       - brand.sh
       - brew.sh
+      - cloud-hypervisor.sh
 
   - type: default-flatpaks
     notify: true
