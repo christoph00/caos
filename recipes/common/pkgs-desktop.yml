@@ -40,7 +40,7 @@ install:
   #- git-delta
   #- eza
   #- neovim
-  - ripgrep
+  # - ripgrep
   #- sd
   #- zsh
   #- ImageMagick

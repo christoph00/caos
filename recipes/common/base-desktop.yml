@@ -10,13 +10,13 @@ modules:
 
   - type: script
     scripts:
-      - thorium.sh
+      # - thorium.sh
       - theme.sh
       - distrobox.sh
-      - wezterm.sh
+      # - wezterm.sh
       #- nix.sh
       - brand.sh
-      - brew.sh
+      # - brew.sh
       #- cloud-hypervisor.sh
 
   - type: default-flatpaks
@@ -30,7 +30,7 @@ modules:
         - io.github.flattool.Warehouse
         #- org.mozilla.firefox
         - it.mijorus.gearlever
-        #- org.kde.konsole
+        - org.kde.konsole
         - com.github.d4nj1.tlpui
        # - com.visualstudio.code
     user:
