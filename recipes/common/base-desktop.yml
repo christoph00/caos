@@ -15,9 +15,9 @@ modules:
       - distrobox.sh
       # - wezterm.sh
       #- nix.sh
-      - brand.sh
       # - brew.sh
       #- cloud-hypervisor.sh
+      - kernel.sh
 
   - type: default-flatpaks
     notify: true

@@ -8,8 +8,5 @@ base-image: ghcr.io/ublue-os/kinoite-main
 image-version: 40 # latest is also supported if you want new updates ASAP
 
 modules:
-  - from-file: common/base-desktop.yml
   - from-file: common/pkgs-desktop.yml
-  - type: bling
-    install:
-      - ublue-update
+  - from-file: common/base-desktop.yml
