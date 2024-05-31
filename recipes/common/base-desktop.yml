@@ -28,7 +28,7 @@ modules:
       install:
         - com.mattjakeman.ExtensionManager
         - io.github.flattool.Warehouse
-        - org.mozilla.firefox
+        - one.ablaze.floorp//lightning
         - org.wezfurlong.wezterm
         - it.mijorus.gearlever
         - org.kde.konsole
