@@ -17,12 +17,12 @@ modules:
       #- nix.sh
       # - brew.sh
       #- cloud-hypervisor.sh
-      - kernel.sh
+      #- kernel.sh
   
-  - type: systemd
-    system:
-      enabled:
-        - uksmd.service
+  #- type: systemd
+  #  system:
+  #    enabled:
+   #     - uksmd.service
 
   - type: default-flatpaks
     notify: true
