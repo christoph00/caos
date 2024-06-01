@@ -12,9 +12,9 @@ install:
   #- kernel-cachyos-lto
   - cosmic-desktop
   - bootc
-  - libcap-ng-devel 
-  - procps-ng-devel
-  - uksmd
+  #- libcap-ng-devel 
+  #- procps-ng-devel
+  #- uksmd
   - bcachefs-tools
   - just
   - nu
