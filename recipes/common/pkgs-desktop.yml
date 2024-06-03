@@ -18,6 +18,7 @@ install:
   - bcachefs-tools
   - just
   - nu
+  - openvswitch
 
 optfix:
   - chromium.org

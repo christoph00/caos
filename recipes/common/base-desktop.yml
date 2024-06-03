@@ -18,7 +18,7 @@ modules:
       # - brew.sh
       - cloud-hypervisor.sh
       #- kernel.sh
-      - kiss-vm.sh
+      # - kiss-vm.sh
   
   #- type: systemd
   #  system:
