@@ -6,7 +6,7 @@ set -oue pipefail
 LATEST_URL=$(curl -sL https://api.github.com/repos/cloud-hypervisor/cloud-hypervisor/releases/latest | jq -r '.assets[] | select(.name? | match(".*cloud-hypervisor$")) | .browser_download_url')
 curl -sL -o /usr/bin/cloud-hypervisor ${LATEST_URL}
 chmod +x /usr/bin/cloud-hypervisor
-
+setcap cap_net_admin+ep /usr/bin/cloud-hypervisor
 
 # CH Remote
 LATEST_REMOTE_URL=$(curl -sL https://api.github.com/repos/cloud-hypervisor/cloud-hypervisor/releases/latest | jq -r '.assets[] | select(.name? | match(".*ch-remote$")) | .browser_download_url')
