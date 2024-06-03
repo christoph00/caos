@@ -16,7 +16,7 @@ modules:
       # - wezterm.sh
       #- nix.sh
       # - brew.sh
-      #- cloud-hypervisor.sh
+      - cloud-hypervisor.sh
       #- kernel.sh
       - kiss-vm.sh
   
